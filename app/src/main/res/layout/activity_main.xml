@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="696dp"
+        android:text="Calculadora"
+        android:textSize="40dp" />
+
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="403dp"
+        android:layout_height="252dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="end"
+        android:hint="INGRESE UN VALOR"
+        android:inputType="none"
+        android:longClickable="false"
+        android:textSize="40dp"/>
+
+
+    <!-- Cuadrícula de botones -->
+
+    <GridLayout
+        android:layout_width="392dp"
+        android:layout_height="471dp"
+        android:layout_below="@id/editText"
+        android:columnCount="4"
+        android:rowCount="6">
+
+
+        <!-- Fila 1 -->
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/buttonParentheses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="()"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <!-- Fila 2 -->
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <!-- Fila 3 -->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/buttonDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <!-- Fila 4 -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="@android:dimen/app_icon_size" />
+
+        <!-- Fila 5 -->
+        <Button
+            android:id="@+id/buttonPound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="#" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonComma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="," />
+
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@android:dimen/app_icon_size"
+            android:text="=" />
+
+    </GridLayout>
+
+</RelativeLayout>
